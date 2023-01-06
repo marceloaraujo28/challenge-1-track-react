@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  min-width: 736px;
+  background-color: var(--gray-700);
+}
