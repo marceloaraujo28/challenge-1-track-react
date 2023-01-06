@@ -1,0 +1,62 @@
+.tasksContent {
+  width: 100%;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.check input[type="checkbox"] {
+  width: 17.45px;
+  height: 17.45px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.messageFinished {
+  font-size: 14px;
+  font-weight: 400;
+  width: 632px;
+  line-height: 140%;
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+  white-space: normal;
+}
+
+.messageNoFinished {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-100);
+  line-height: 140%;
+  width: 632px;
+}
+
+.tasksContent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.tasksContent button:hover {
+  background-color: var(--gray-400);
+  border-radius: 4px;
+  color: var(--danger);
+}
