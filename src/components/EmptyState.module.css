@@ -1,0 +1,22 @@
+.emptyContent {
+  width: 736px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--gray-300);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+}
+
+.messageContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
