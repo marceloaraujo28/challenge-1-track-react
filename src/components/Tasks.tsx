@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Tasks.module.css";
-import { Trash } from "phosphor-react";
+import { Trash, CheckCircle, Circle } from "phosphor-react";
 
 interface TasksProps {
   id: number;
@@ -32,11 +32,11 @@ export function Tasks({
   return (
     <div className={styles.tasksContent}>
       <div className={styles.check}>
-        <input
-          type="checkbox"
-          checked={finished}
-          onChange={onHandleChecked}
-        ></input>
+        {finished ? (
+          <CheckCircle onClick={onHandleChecked} size={18} color={"#5E60CE"} />
+        ) : (
+          <Circle onClick={onHandleChecked} color={"#4EA8DE"} size={18} />
+        )}
       </div>
 
       <p className={styleFont}>{message}</p>
