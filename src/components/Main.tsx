@@ -13,14 +13,7 @@ interface Tasks {
 
 export function Main() {
   const [messageTask, setMessageTask] = useState("");
-  const [tasks, setTasks] = useState<Tasks[]>([
-    {
-      id: 12,
-      message:
-        "Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.",
-      finished: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState<Tasks[]>([]);
 
   console.log(tasks);
 
